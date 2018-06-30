@@ -1,5 +1,8 @@
 //Logic = https://cp-algorithms.com/string/z-function.html
 
+//The Z-function for this string is an array of length n where the i-th element is equal to the greatest number 
+//of characters starting from the position i that coincide with the first characters of s.
+
 vector<int> z_function(string s)
 {
 	int n=s.size();
