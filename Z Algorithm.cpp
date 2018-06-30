@@ -18,3 +18,6 @@ vector<int> z_function(string s)
 
 //Sample Problem 1: http://codeforces.com/problemset/problem/127/D
 //Sample Solution 1: http://codeforces.com/contest/127/submission/39791421
+
+//Sample Problem 2: http://codeforces.com/contest/432/problem/D
+//Sample Solution 2: http://codeforces.com/contest/432/submission/39791526
