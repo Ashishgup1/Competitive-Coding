@@ -1,8 +1,11 @@
 void dijkstra(int source, int destination)
 {
 	for(int i=1;i<=n;i++)
-		dist[i]=1e18;
-	dist[source]=0;
+	{
+		arrival[i]=1e18;
+		departure[i]=1e18;
+	}
+	arrival[source]=0;
 	set<pair<int, int> > s;
 	s.insert({0, source});
 	while(!s.empty())
@@ -10,16 +13,17 @@ void dijkstra(int source, int destination)
 		auto x = *(s.begin());
 		s.erase(x);
 		vis[x.second]=1;
+		departure[x.second]=arrival[x.second];
 		vector<pair<int, int> > v;
 		for(auto it:g[x.second])
 		{
 			v.push_back(it);
 
-			if(dist[it.first] > dist[x.second] + it.second)
+			if(arrival[it.first] > departure[x.second] + it.second)
 			{
-				s.erase({dist[it.first], it.first});
-				dist[it.first]=dist[x.second] + it.second;
-				s.insert({dist[it.first], it.first});
+				s.erase({arrival[it.first], it.first});
+				arrival[it.first]=departure[x.second] + it.second;
+				s.insert({arrival[it.first], it.first});
 				parent[it.first]=x.second;
 			}
 		}
@@ -43,6 +47,7 @@ void dijkstra(int source, int destination)
 }
 
 //Sample Problem 1 (Direct Dijkstra): https://codeforces.com/contest/20/problem/C
-//Sample Solution 1: https://codeforces.com/contest/20/submission/39891722
+//Sample Solution 1: http://codeforces.com/contest/20/submission/39892416
 
-//Sample Problem 2: http://codeforces.com/contest/229/problem/B
+//Sample Problem 2: http://codeforces.com/contest/230/problem/D
+//Sample Solution 2: http://codeforces.com/contest/230/submission/39892295
