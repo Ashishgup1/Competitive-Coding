@@ -57,3 +57,6 @@ void scc()
 
 //Sample Problem 2 (Detection of Directed Cycle in a connected component): http://codeforces.com/contest/505/problem/D
 //Sample Solution 2: http://codeforces.com/contest/505/submission/39885530
+
+//Sample Problem 3: https://codeforces.com/contest/118/problem/E
+//Sample Solution 3: https://codeforces.com/contest/118/submission/39888563
