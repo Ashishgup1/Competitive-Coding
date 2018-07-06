@@ -68,3 +68,6 @@ void dfs(int v, int p, int keep)
 
 //Sample Problem 2: https://codeforces.com/contest/570/problem/D
 //Sample Solution 2 (Offline Processing): https://codeforces.com/contest/570/submission/40034531
+
+//Sample Problem 3: https://codeforces.com/problemset/problem/246/E
+//Sample Solution 3: https://codeforces.com/contest/246/submission/40040432
