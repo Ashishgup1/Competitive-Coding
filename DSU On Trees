@@ -71,3 +71,6 @@ void dfs(int v, int p, int keep)
 
 //Sample Problem 3: https://codeforces.com/problemset/problem/246/E
 //Sample Solution 3: https://codeforces.com/contest/246/submission/40040432
+
+//Sample Problem 4: https://codeforces.com/contest/375/problem/D
+//Sasmple Solution 4: https://codeforces.com/contest/375/submission/40044165
