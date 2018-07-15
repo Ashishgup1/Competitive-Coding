@@ -47,7 +47,7 @@ void dfs(int v, int p, int keep)
 	for(auto u:g[v])
 	{
 		if(u!=p && u!=bigChild)
-			dfs(u, v, 0); //Run DFS on small childs and clear them
+			dfs(u, v, 0); //Run DFS on small children and clear them
 	}
 	if(bigChild!=-1)
 	{
