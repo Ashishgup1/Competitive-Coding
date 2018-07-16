@@ -1,10 +1,10 @@
 int tim=0;
 int parent[LG][N];
-int starttime[N], endtime[N], level[N];
+int tin[N], tout[N], level[N];
 
 void dfs(int k, int par, int lvl)
 {
-	starttime[k]=++tim;
+	tin[k]=++tim;
 	parent[0][k]=par;
 	level[k]=lvl;
 	for(auto it:g[k])
@@ -13,19 +13,15 @@ void dfs(int k, int par, int lvl)
 			continue;
 		dfs(it, k, lvl+1);
 	}
-	endtime[k]=tim;
+	tout[k]=tim;
 }
 
 void precompute()
 {
 	for(int i=1;i<LG;i++)
-	{
 		for(int j=1;j<=n;j++)
-		{
 			if(parent[i-1][j])
 				parent[i][j]=parent[i-1][parent[i-1][j]];
-		}
-	}
 }
 
 int LCA(int u, int v)
