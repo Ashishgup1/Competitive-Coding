@@ -107,7 +107,7 @@ void do_FFT(vector<int> &A, vector<int> &B, vector<int> &result)
 	int n=1, bits=0;
 	while(n<2*A.size() || n<2*B.size())
 		n<<=1, bits++;
-	result.resize(n, 0);
+	result.assign(n, 0);
 	calc_rev(n, bits);
 	vector<int> tempA(A.begin(), A.end());
 	vector<int> tempB(B.begin(), B.end());
