@@ -43,10 +43,10 @@ void fft(vector<base> &A, int n, bool invert)
 		for(int i=0;i<n;i+=len)
 		{
 			base t;
-			int 	pu = i,
-					pv = i+half,
-					pu_end = i+half,
-					pw = 0;
+			int pu = i,
+				pv = i+half,
+				pu_end = i+half,
+				pw = 0;
 			for(; pu!=pu_end; pu++, pv++, pw++)
 			{
 				t=A[pv] * omega[pw];
