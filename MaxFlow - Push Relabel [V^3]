@@ -39,7 +39,7 @@ struct PushRelabel
 
 	void push(edge &e)
 	{
-	    int amt=(int)min(excess[e.from], (long long)e.cap - e.flow);
+		int amt=(int)min(excess[e.from], (long long)e.cap - e.flow);
 		if(height[e.from]<=height[e.to] || amt==0)
 			return;
 		e.flow += amt;
