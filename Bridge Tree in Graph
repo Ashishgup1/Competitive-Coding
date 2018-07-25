@@ -62,3 +62,6 @@ void dfs2(int k)
 
 //Problem 1: http://codeforces.com/contest/1000/problem/E
 //Solution 1: http://codeforces.com/contest/1000/submission/40743431
+
+//Problem 2: http://codeforces.com/contest/178/problem/B3
+//Solution 2: http://codeforces.com/contest/178/submission/40744889
