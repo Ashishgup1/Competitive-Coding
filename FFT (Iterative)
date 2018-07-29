@@ -6,11 +6,13 @@ const int Maxb = 19;
 const int Maxp = 450;
 const int MOD=13313;
 
-base omega[N];
-int rev[N];
+vector<int> rev;
+vector<base> omega;
 
 void calc_rev(int n, int log_n) //Call this before FFT
 {
+	omega.assign(n, 0);
+	rev.assign(n, 0);
 	for(int i=0;i<n;i++)
 	{
 		rev[i]=0;
