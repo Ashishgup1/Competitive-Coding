@@ -124,8 +124,11 @@ void do_FFT(vector<int> &A, vector<int> &B, vector<int> &result)
 	}
 }
 
-//Sample Problem 1: https://www.codechef.com/problems/COUNTWAY/
-//Sample Solution 1 (Divide and Conquer): https://www.codechef.com/viewsolution/19144054
+//Problem 1: https://www.codechef.com/problems/COUNTWAY/
+//Solution 1 (Divide and Conquer): https://www.codechef.com/viewsolution/19144054
 
-//Sample Problem 2: https://codeforces.com/contest/993/problem/E
-//Sample Solution 2: https://codeforces.com/contest/993/submission/40115289
+//Problem 2: https://codeforces.com/contest/993/problem/E
+//Solution 2: https://codeforces.com/contest/993/submission/40115289
+
+//Problem 3: https://codeforces.com/contest/954/problem/I
+//Solution 3: https://codeforces.com/contest/954/submission/40926618
