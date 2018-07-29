@@ -1,4 +1,3 @@
-
 int xgcd(int a, int b, int &x, int &y) //Returns GCD of A, B
 {
 	if(a==0) 
@@ -14,6 +13,18 @@ int xgcd(int a, int b, int &x, int &y) //Returns GCD of A, B
 	return d;
 }
 
+int modular_inverse(int a, int m)
+{
+	int x, y;
+	int g=xgcd(a, m, x, y);
+	if(g!=1)
+		return -1;
+	else
+	{
+		x=(x%m + m)%m;
+		return x;
+	}
+}
 
 void shift_solution(int &x, int &y, int a, int b, int cnt)
 {
