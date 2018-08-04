@@ -62,7 +62,7 @@ int work()
 		return tin[a]<tin[b];
 	});
 	int idx=k;
-	for(int i=1;i<k;i++)
+	for(int i=1;i<idx;i++)
 		vertices[++k]=LCA(vertices[i], vertices[i+1]);
 	sort(vertices+1, vertices+k+1);
 	k=unique(vertices+1, vertices+k+1) - vertices - 1;
