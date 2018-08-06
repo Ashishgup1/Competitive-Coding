@@ -16,15 +16,18 @@ vector<int> prefix_function(string &s)
 
 vector<int> find_occurences(string &text, string &pattern)
 {
-  string cur=pattern + '#' + text;
-  int sz1=text.size(), sz2=pattern.size();
-  vector<int> v;
-  for(int i=sz2+1;i<=sz1+sz2;i++)
-  {
-    if(lps[i]==sz2)
-    {
-      v.push_back(i-2*sz2);
-    }
-  }
-  return v;
+	string cur=pattern + '#' + text;
+	int sz1=text.size(), sz2=pattern.size();
+	vector<int> v;
+	for(int i=sz2+1;i<=sz1+sz2;i++)
+	{
+		if(lps[i]==sz2)
+		{
+			v.push_back(i-2*sz2);
+		}
+	}
+	return v;
 }
+
+//Problem 1 (Basic KMP): https://codeforces.com/contest/1016/problem/B
+//Solution 1: https://codeforces.com/contest/1016/submission/41167402
