@@ -1,7 +1,6 @@
-
-struct point
+struct point //Replace double with int if not required
 {
-	int x, y;
+	double x, y;
 
 	point () {}
 
@@ -10,6 +9,13 @@ struct point
 	void operator =(const point &p)
 	{
 		x=p.x, y=p.y;
+	}
+
+	bool operator <(const point&p)
+	{
+		if(x==p.x)
+			return y<p.y;
+		return x<p.x;
 	}
 
 	point operator +(const point&p) const
@@ -24,7 +30,7 @@ struct point
 		return pt;
 	}
 
-	int crossProduct(const point &p) const
+	double crossProduct(const point &p) const
 	{	
 		return x * p.y - y * p.x;
 	}	
@@ -34,7 +40,7 @@ struct point
 		return x * p.x + y * p.y;
 	}
 
-	int dist()
+	double dist()
 	{
 		return x*x + y*y;
 	}
@@ -60,10 +66,10 @@ bool ccw(point &a, point &b, point &c)
 	return area>0;
 }
 
-void convex_hull(vector<point> &v)
+vector<point> convex_hull(vector<point> &v)
 {
 	if(v.size()==1)
-		return;
+		return v;
 
 	sort(v.begin(), v.end(), comp);
 
