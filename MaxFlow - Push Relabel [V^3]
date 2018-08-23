@@ -124,3 +124,7 @@ struct PushRelabel
 
 //Problem 2: http://codeforces.com/contest/653/problem/D
 //Solution 2: http://codeforces.com/contest/653/submission/40659969
+
+//Problem 3 (Vertex Disjoint Chain with Path Printing): (K) http://codeforces.com/gym/101606/attachments/download/6242/2017-united-kingdom-ireland-programming-contest-ukiepc-2017-en.pdf
+//Solution 3: http://codeforces.com/gym/101606/submission/41992537
+
