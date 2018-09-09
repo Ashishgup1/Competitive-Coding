@@ -14,11 +14,8 @@ void dijkstra(int source, int destination)
 		s.erase(x);
 		vis[x.second]=1;
 		departure[x.second]=arrival[x.second];
-		vector<pair<int, int> > v;
 		for(auto it:g[x.second])
 		{
-			v.push_back(it);
-
 			if(arrival[it.first] > departure[x.second] + it.second)
 			{
 				s.erase({arrival[it.first], it.first});
