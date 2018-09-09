@@ -16,8 +16,6 @@ int primsMST(int source) //Finds the cost and makes the MST
 	{
 		auto x = *(s.begin());
 		s.erase(x);
-		if(vis[x.second])
-			continue;
 		vis[x.second]=1;
 		cost+=x.first;
 		int u=x.second;
