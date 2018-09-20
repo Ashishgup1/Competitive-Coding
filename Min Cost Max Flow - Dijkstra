@@ -1,0 +1,87 @@
+struct MinCostMaxFlow
+{
+	static const int INF=1e9+5;
+
+	int n, E=0;
+	vector<int> cap, cost;
+	vector<int> to, prev, last, path, used;
+	vector<int> dist, potential;
+	priority_queue<pair<int, int> > pq;
+
+	MinCostMaxFlow(int n): n(n), E(0),
+		dist(n, 0), potential(n, 0), last(n, -1), path(n, 0), used(n, 0) {}
+
+	void addEdge(int x, int y, int capacity, int cst)
+	{
+		cap.push_back(capacity), cost.push_back(cst), to.push_back(y), prev.push_back(last[x]), last[x]=E, E++;
+		cap.push_back(0), cost.push_back(-cst), to.push_back(x), prev.push_back(last[y]), last[y]=E, E++;
+	}
+
+	pair<int, int> search(int source, int destination)
+	{
+		int flow=0, curcost=0;
+		for(int i=0;i<n;i++)
+			used[i]=0, dist[i]=INF;
+
+		dist[source]=0, path[source]=-1;
+		pq.push({0, source});
+
+		while(!pq.empty())
+		{
+			int x=pq.top().second;
+			pq.pop();
+			if(used[x])
+				continue;
+			used[x]=1;
+			for(int e=last[x];e>=0;e=prev[e])
+			{
+				if(cap[e]>0)
+				{
+					int tempCost=dist[x] + cost[e] + potential[x] - potential[to[e]];
+					if(tempCost < dist[to[e]] && !used[to[e]])
+					{
+						dist[to[e]]=tempCost;
+						path[to[e]]=e;
+						pq.push({-dist[to[e]], to[e]});
+					}
+				}
+			}
+		}
+
+		for(int i=0;i<n;i++)
+			potential[i]+=dist[i];
+
+		if(used[destination])
+		{
+			flow=INF;
+			for(int e=path[destination];e>=0;e=path[to[e^1]])
+				flow=min(flow, cap[e]);
+			for(int e=path[destination];e>=0;e=path[to[e^1]])
+			{
+				curcost+=cost[e] * flow;
+				cap[e]-=flow;
+				cap[e^1]+=flow;
+			}
+		}
+		return {flow, curcost};
+	}
+
+	pair<int, int> minCostFlow(int source, int destination) //returns {flow, cost}
+	{
+		int flow=0, cost=0;
+
+		while(true)
+		{
+			pair<int, int> p=search(source, destination);
+			if(!used[destination])
+				break;
+			flow+=p.first;
+			cost+=p.second;
+		}
+
+		return {flow, cost};
+	}
+};
+
+//Problem 1: https://www.spoj.com/problems/GREED/
+//Solution 1: http://p.ip.fi/OGXl
