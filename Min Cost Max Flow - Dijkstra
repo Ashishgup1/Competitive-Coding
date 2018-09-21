@@ -110,3 +110,6 @@ struct MinCostMaxFlow
 
 //Problem 1: https://www.spoj.com/problems/GREED/
 //Solution 1: http://p.ip.fi/ODRk
+
+//Problem 2 (Double Cost): https://codeforces.com/contest/277/problem/E
+//Solution 2: https://codeforces.com/contest/277/submission/43180845
