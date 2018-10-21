@@ -7,6 +7,7 @@ void dijkstra(int source, int destination)
 	{
 		arrival[i]=1e18;
 		departure[i]=1e18;
+		vis[i]=0;
 	}
 	arrival[source]=0;
 	set<pair<int, int> > s;
