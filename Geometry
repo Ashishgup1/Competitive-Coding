@@ -24,7 +24,7 @@ int isRectangle(point &a, point &b, point &c, point &d)
 //Checks if ABCD form a rectangle, in any orientation
 int isRectangleAnyOrder(point &a, point &b, point &c, point &d)
 {
-	return isRectangle(a, b, c, d) || isRectangle(a, c, b, d) | isRectangle(a, d, b, c);
+	return isRectangle(a, b, c, d) || isRectangle(b, c, a, d) | isRectangle(c, a, b, d);
 }
 
 //Checks if ABCD form a square (in that order)
@@ -36,5 +36,5 @@ int isSquare(point &a, point &b, point &c, point &d)
 //Checks if ABCD form a square, in any orientation
 int isSquareAnyOrder(point &a, point &b, point &c, point &d)
 {
-	return isSquare(a, b, c, d) || isSquare(a, c, b, d) | isSquare(a, d, b, c);
+	return isSquare(a, b, c, d) || isSquare(b, c, a, d) | isSquare(c, a, b, d);
 }
