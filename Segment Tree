@@ -45,4 +45,5 @@ void update(int node, int L, int R, int pos, int val)
 //Problem 1 (Max Query - Point Update with Coordinate Compression): http://codeforces.com/gym/100733/problem/F
 //Solution 1: http://codeforces.com/gym/100733/submission/41643795
 
-//Problerm 2 (Min Query - Offline processing): https://codeforces.com/problemset/problem/522/D
+//Problem 2 (Min Query - Offline processing): https://codeforces.com/problemset/problem/522/D
+//Solution 2: https://codeforces.com/contest/522/submission/45493164
