@@ -7,7 +7,7 @@ bool findLoop(int v)
 	vis[v]=1;
 	for(auto &it:g[v])
 	{
-		if(findLoop2(it))
+		if(findLoop(it))
 			return 1;
 	}
 	vis[v]=2;
