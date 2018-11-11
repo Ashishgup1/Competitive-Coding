@@ -19,10 +19,10 @@ bool checkLoop()
 	fill(vis+1, vis+n+1, 0);
 	for(int i=1;i<=n;i++)
 	{
-		if(!vis[i] && findLoop2(i, forb))
-			return 0;
+		if(!vis[i] && findLoop(i))
+			return 1;
 	}
-	return 1;
+	return 0;
 }
 
 //Problem 1 (Marking edges belong to a cycle): https://codeforces.com/contest/915/problem/D
