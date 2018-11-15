@@ -42,3 +42,5 @@ void remove(int L, int R)
 
 //Sample Problem 1: https://codeforces.com/contest/915/problem/E
 //Sample Solution 1: https://codeforces.com/contest/915/submission/40028187
+
+//Sample Problem 2 (with sets): https://codeforces.com/contest/899/problem/E
