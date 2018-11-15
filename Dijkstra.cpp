@@ -87,3 +87,5 @@ void dijkstra(int source, int destination, int arrival[], int departure[])
 
 //Sample Problem 2: http://codeforces.com/contest/230/problem/D
 //Sample Solution 2: http://codeforces.com/contest/230/submission/39892295
+
+//Sample Problem 3 (count point on edges): https://codeforces.com/problemset/problem/144/D
