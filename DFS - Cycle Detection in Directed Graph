@@ -27,3 +27,6 @@ bool checkLoop()
 
 //Problem 1 (Marking edges belong to a cycle): https://codeforces.com/contest/915/problem/D
 //Solution 1: https://codeforces.com/contest/915/submission/41311663
+
+//Problem 2: https://codeforces.com/contest/937/problem/D
+//Solution 2: https://codeforces.com/contest/937/submission/45960040
