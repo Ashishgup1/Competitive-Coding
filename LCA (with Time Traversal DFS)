@@ -48,3 +48,6 @@ int LCA(int u, int v)
 	}
 	return parent[0][u];
 }
+
+//Problem 1 (Dynamic Diameter): https://codeforces.com/problemset/problem/379/F
+//Solution 1: https://codeforces.com/contest/379/submission/45960185
