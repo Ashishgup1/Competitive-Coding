@@ -82,10 +82,13 @@ void dijkstra(int source, int destination, int arrival[], int departure[])
 	}
 }
 
-//Sample Problem 1 (Direct Dijkstra): https://codeforces.com/contest/20/problem/C
-//Sample Solution 1: http://codeforces.com/contest/20/submission/39892416
+//Problem 1 (Direct Dijkstra): https://codeforces.com/contest/20/problem/C
+//Solution 1: http://codeforces.com/contest/20/submission/39892416
 
-//Sample Problem 2: http://codeforces.com/contest/230/problem/D
-//Sample Solution 2: http://codeforces.com/contest/230/submission/39892295
+//Problem 2: http://codeforces.com/contest/230/problem/D
+//Solution 2: http://codeforces.com/contest/230/submission/39892295
 
-//Sample Problem 3 (count point on edges): https://codeforces.com/problemset/problem/144/D
+//Problem 3 (count point on edges): https://codeforces.com/problemset/problem/144/D
+
+//Problem 4 (all source Dijkstra): https://codeforces.com/contest/96/problem/D
+//Solution 4: https://codeforces.com/contest/96/submission/45959572
