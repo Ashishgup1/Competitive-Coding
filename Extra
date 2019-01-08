@@ -1,14 +1,11 @@
-- DFS in 2D Grid:
+-DFS in 2D Grid:
 
 //Problem 1: https://codeforces.com/contest/616/problem/C
-//Solution 1: https://codeforces.com/contest/616/submission/45959489
 
 -Dealing with periodic repeats:
 
 //Problem 1: https://codeforces.com/problemset/problem/173/A
-
 //Problem 2: https://codeforces.com/contest/863/problem/C
-//Solution 2: 
 
 -Good DP Problems:
 
@@ -33,3 +30,4 @@
 -Random Good Questions:
 
 //Problem 1 (Math): https://codeforces.com/contest/396/problem/B
+//Problem 2 (Binary Search with Consecutive Prefix Sums): https://codeforces.com/contest/837/problem/F
