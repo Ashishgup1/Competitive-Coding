@@ -80,3 +80,6 @@ struct Hopcroft_Karp
 		return matching;
 	}
 };
+
+//Problem 1: https://codeforces.com/contest/387/problem/D
+//Solution 1: https://codeforces.com/contest/387/submission/48378847
