@@ -83,3 +83,6 @@ struct Hopcroft_Karp
 
 //Problem 1: https://codeforces.com/contest/387/problem/D
 //Solution 1: https://codeforces.com/contest/387/submission/48378847
+
+//Problem 2 (Ensuring that matching is consistent): https://www.spoj.com/problems/ADABLOOM/
+//Solution 2:http://p.ip.fi/igSb
