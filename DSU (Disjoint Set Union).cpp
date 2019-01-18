@@ -88,7 +88,7 @@ struct DSU
 		sz[par1]=0;
 		par[par1]=par[par2];
 	}
-}DSU;
+};
 
 //Problem 1 (DSU + Divide and Conquer): https://codeforces.com/contest/813/problem/F
 //Solution 1: 
