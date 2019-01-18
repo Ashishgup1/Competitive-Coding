@@ -48,7 +48,7 @@ Struct Implementation:
 struct DSU
 {
 	int connected;
-	int root[N], sz[N];
+	int par[N], sz[N];
 
 	DSU() {} 
 
@@ -56,7 +56,7 @@ struct DSU
 	{
 		for(int i=1;i<=n;i++)
 		{
-			root[i]=i;
+			par[i]=i;
 			sz[i]=1;
 		}
 		connected=n;
@@ -64,10 +64,10 @@ struct DSU
 
 	int getPar(int k)
 	{
-		while(k!=root[k])
+		while(k!=par[k])
 		{
-			root[k]=root[root[k]];
-			k=root[k];
+			par[k]=par[par[k]];
+			k=par[k];
 		}
 		return k;
 	}
@@ -86,7 +86,7 @@ struct DSU
 
 		sz[par2]+=sz[par1];
 		sz[par1]=0;
-		root[par1]=root[par2];
+		par[par1]=par[par2];
 	}
 }DSU;
 
