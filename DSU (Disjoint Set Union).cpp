@@ -45,14 +45,16 @@ void merge(int u, int v)
  
 Struct Implementation:
 
-typedef struct data
+struct DSU
 {
 	int connected;
 	int root[N], sz[N];
 
-	void init()
+	DSU() {} 
+
+	DSU(int n) 
 	{
-		for(int i=1;i<N;i++)
+		for(int i=1;i<=n;i++)
 		{
 			root[i]=i;
 			sz[i]=1;
@@ -60,7 +62,7 @@ typedef struct data
 		connected=n;
 	}
 
-	int rt(int k)
+	int getPar(int k)
 	{
 		while(k!=root[k])
 		{
@@ -70,22 +72,21 @@ typedef struct data
 		return k;
 	}
 
-	void merge(int u, int v)
+	void unite(int u, int v)
 	{
-		int rt1=rt(u);
-		int rt2=rt(v);
+		int par1=getPar(u), par2=getPar(v);
 
-		if(rt1==rt2)
+		if(par1==par2)
 			return;
 
 		connected--;
 
-		if(sz[rt1]>sz[rt2])
-			swap(rt1, rt2);
+		if(sz[par1]>sz[par2])
+			swap(par1, par2);
 
-		sz[rt2]+=sz[rt1];
-		sz[rt1]=0;
-		root[rt1]=root[rt2];
+		sz[par2]+=sz[par1];
+		sz[par1]=0;
+		root[par1]=root[par2];
 	}
 }DSU;
 
