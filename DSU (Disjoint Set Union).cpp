@@ -88,3 +88,6 @@ typedef struct data
 		root[rt1]=root[rt2];
 	}
 }DSU;
+
+//Problem 1 (DSU + Divide and Conquer): https://codeforces.com/contest/813/problem/F
+//Solution 1: 
