@@ -40,6 +40,8 @@ void merge(int u, int v)
 	sz[rt1]=0;
 	root[rt1]=root[rt2];
 }
+
+---
  
 Struct Implementation:
 
@@ -50,7 +52,7 @@ typedef struct data
 
 	void init()
 	{
-		for(int i=1;i<=n;i++)
+		for(int i=1;i<N;i++)
 		{
 			root[i]=i;
 			sz[i]=1;
