@@ -24,9 +24,10 @@
 
 -Graph Theory:
 
-//Problem 1: https://codeforces.com/contest/337/problem/D
+//Problem 1 (Diameter logic): https://codeforces.com/contest/337/problem/D
 //Problem 2 (Updating diameter): https://codeforces.com/problemset/problem/379/F
 //Problem 3: https://codeforces.com/contest/1040/problem/E
+//Problem 4: (DSU with Undo + Divide and Conquer): https://codeforces.com/contest/813/problem/F
 
 -GCD Inclusion Exclusion:
 
