@@ -91,4 +91,4 @@ struct DSU
 };
 
 //Problem 1 (DSU + Divide and Conquer): https://codeforces.com/contest/813/problem/F
-//Solution 1: 
+//Solution 1: https://codeforces.com/contest/813/submission/48548930
