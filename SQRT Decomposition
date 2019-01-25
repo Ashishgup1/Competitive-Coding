@@ -140,3 +140,6 @@ int query(int l, int r)
 
 //Problem 1: https://codeforces.com/contest/444/problem/C
 //Solution 1: https://codeforces.com/contest/444/submission/48887630
+
+//Problem 2 (Updating indices of a particular set): https://codeforces.com/contest/348/problem/C
+//Solution 2: https://codeforces.com/contest/348/submission/48511250
