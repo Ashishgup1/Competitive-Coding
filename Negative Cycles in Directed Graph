@@ -1,3 +1,51 @@
+SPFA:
+
+int n, m;
+int dist[N], cnt[N];
+bool inqueue[N];
+vector<pair<int, int> > g[N];
+
+bool negativeCycle() //Returns true if there is a negative cycle
+{
+	queue<int> q;
+
+	for(int i=1;i<=n;i++)
+	{
+		dist[i]=cnt[i]=0;
+		q.push(i), inqueue[i]=true;
+	}
+
+	while(!q.empty())
+	{
+		int v=q.front();
+		q.pop();
+		inqueue[v]=false;
+
+		for(auto &edge:g[v])
+		{
+			int to=edge.first;
+			int w=edge.second;
+
+			if(dist[v] + w < dist[to])
+			{
+				dist[to] = dist[v] + w;
+				dist[to] = max(dist[to], INF);
+				if(!inqueue[to])
+				{
+					q.push(to);
+					inqueue[to]=true;
+					cnt[to]++;
+					if(cnt[to]>n)
+						return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
+Bellman Ford (with Path Printing of the negative cycle):
+
 const int INF=1e9;
 
 struct Edge
@@ -48,3 +96,6 @@ bool negativeCycle() //Return true if there is a negative cycle in the graph
 		return 1;
 	}
 }
+
+//Question 1: https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2031
+//Solution 1: http://p.ip.fi/muBP
