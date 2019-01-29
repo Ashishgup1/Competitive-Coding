@@ -1,3 +1,5 @@
+const int SZ=sqrt(N);
+
 struct sqrtDecomposition
 {
 	int L, R;
@@ -105,16 +107,16 @@ struct sqrtDecomposition
 
 };
 
-sqrtDecomposition blcks[SZ+5];
+sqrtDecomposition blocks[SZ+5];
 
 void init()
 {
-	int blocks=n/SZ + 1;
+	int blcks=n/SZ + 1;
 	int curL=1, curR=SZ;
-	for(int i=1;i<=blocks;i++)
+	for(int i=1;i<=blcks;i++)
 	{
 		curR=min(curR, n);
-		blcks[i].init(curL, curR);
+		blocks[i].init(curL, curR);
 		curL+=SZ;
 		curR+=SZ;
 	}
@@ -125,7 +127,7 @@ void update(int l, int r, int x)
 	int left=(l-1)/SZ  + 1;
 	int right=(r-1)/SZ + 1;
 	for(int i=left;i<=right;i++)
-		blcks[i].update(l, r, x);		
+		blocks[i].update(l, r, x);		
 }
 
 int query(int l, int r)
@@ -134,7 +136,7 @@ int query(int l, int r)
 	int right=(r-1)/SZ + 1;
 	int answer=0;
 	for(int i=left;i<=right;i++)
-		answer+=blcks[i].query(l, r);
+		answer+=blocks[i].query(l, r);
 	return answer;		
 }
 
