@@ -13,8 +13,12 @@
 //Problem 2: https://codeforces.com/problemset/problem/137/D
 //Problem 3: https://codeforces.com/contest/229/problem/D
 //Problem 4 (Mutually Dependent Recurrence): https://www.hackerrank.com/challenges/alien-languages/problem
-//Problem 5 (DP on Tree): https://codeforces.com/problemset/problem/815/C
+//Problem 5 (DP on Tree): 
 
+-DP on Tree:
+//Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
+//Problem 2 (Number of subtrees with diameter <=K): https://www.spoj.com/problems/CNTTREE/
+//Problem 3: https://codeforces.com/problemset/problem/815/C
 (Probability):
 //Problem 1: https://codeforces.com/contest/513/problem/G2
 //Problem 2: https://www.codechef.com/GWR17ROL/problems/KALADIN/
