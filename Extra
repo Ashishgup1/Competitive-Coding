@@ -1,13 +1,9 @@
--DFS in 2D Grid:
-
-//Problem 1: https://codeforces.com/contest/616/problem/C
-
 -Dealing with periodic repeats:
 
 //Problem 1: https://codeforces.com/problemset/problem/173/A
 //Problem 2: https://codeforces.com/contest/863/problem/C
 
--Good DP Problems:
+-DP Problems:
 
 //Problem 1: https://codeforces.com/contest/214/problem/D
 //Problem 2: https://codeforces.com/problemset/problem/137/D
@@ -18,14 +14,20 @@
 //Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
 //Problem 2 (Number of subtrees with diameter <=K): https://www.spoj.com/problems/CNTTREE/
 //Problem 3: https://codeforces.com/problemset/problem/815/C
+
+-DFS in 2D Grid:
+
+//Problem 1: https://codeforces.com/contest/616/problem/C
+
 (Probability):
 //Problem 1: https://codeforces.com/contest/513/problem/G2
 //Problem 2: https://www.codechef.com/GWR17ROL/problems/KALADIN/
 //Problem 3: https://codeforces.com/contest/280/problem/C
 
--Smart Greedy:
+-GCD Inclusion Exclusion:
 
-//Problem 1: https://codeforces.com/contest/447/problem/D
+//Problem 1: https://codeforces.com/contest/548/problem/E
+//Problem 2: https://codeforces.com/contest/839/problem/D
 
 -Graph Theory:
 
@@ -34,10 +36,9 @@
 //Problem 3: https://codeforces.com/contest/1040/problem/E
 //Problem 4: (DSU with Undo + Divide and Conquer): https://codeforces.com/contest/813/problem/F
 
--GCD Inclusion Exclusion:
+-Smart Greedy:
 
-//Problem 1: https://codeforces.com/contest/548/problem/E
-//Problem 2: https://codeforces.com/contest/839/problem/D
+//Problem 1: https://codeforces.com/contest/447/problem/D
 
 -Random Good Questions:
 
