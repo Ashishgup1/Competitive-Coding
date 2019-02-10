@@ -1,10 +1,12 @@
--Dealing with periodic repeats:
+- DFS in 2D Grid:
+//Problem 1: https://codeforces.com/contest/616/problem/C
+//Solution 1: https://codeforces.com/contest/616/submission/45959489
 
+-Dealing with periodic repeats:
 //Problem 1: https://codeforces.com/problemset/problem/173/A
 //Problem 2: https://codeforces.com/contest/863/problem/C
 
 -DP Problems:
-
 //Problem 1: https://codeforces.com/contest/214/problem/D
 //Problem 2: https://codeforces.com/problemset/problem/137/D
 //Problem 3: https://codeforces.com/contest/229/problem/D
@@ -17,7 +19,6 @@
 //Problem 4 (Smaller to Larger merging): https://csacademy.com/contest/round-31/task/uniform-trees/
 
 -DFS in 2D Grid:
-
 //Problem 1: https://codeforces.com/contest/616/problem/C
 
 (Probability):
@@ -26,25 +27,20 @@
 //Problem 3: https://codeforces.com/contest/280/problem/C
 
 -GCD Inclusion Exclusion:
-
 //Problem 1: https://codeforces.com/contest/548/problem/E
 //Problem 2: https://codeforces.com/contest/839/problem/D
 
 -Graph Theory:
-
 //Problem 1 (Diameter logic): https://codeforces.com/contest/337/problem/D
 //Problem 2 (Updating diameter): https://codeforces.com/problemset/problem/379/F
 //Problem 3: https://codeforces.com/contest/1040/problem/E
 //Problem 4: (DSU with Undo + Divide and Conquer): https://codeforces.com/contest/813/problem/F
 
 -Smart Greedy:
-
 //Problem 1: https://codeforces.com/contest/447/problem/D
 
 -Random Good Questions:
-
 //Problem 1 (Math): https://codeforces.com/contest/396/problem/B
 //Problem 2 (Binary Search with Consecutive Prefix Sums): https://codeforces.com/contest/837/problem/F
 //Problem 3 (DP with Consecutive Prefix Sums): https://codeforces.com/contest/57/problem/C
 //Problem 4 (Updating indices of a particular set): https://codeforces.com/contest/348/problem/C
-
