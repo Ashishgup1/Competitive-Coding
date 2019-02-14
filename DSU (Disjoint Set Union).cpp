@@ -72,6 +72,11 @@ struct DSU
 		return k;
 	}
 
+	int getSize(int k)
+	{
+		return sz[getPar(k)];
+	}
+
 	void unite(int u, int v)
 	{
 		int par1=getPar(u), par2=getPar(v);
