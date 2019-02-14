@@ -77,3 +77,6 @@ void parallel_binary()
 
 //Problem 1: https://www.spoj.com/problems/METEORS/
 //Solution 1: http://p.ip.fi/Z8qa
+
+//Problem 2: https://atcoder.jp/contests/agc002/tasks/agc002_d
+//Solution 2: http://p.ip.fi/C4ZG
