@@ -1,4 +1,3 @@
-
 int pow(int a, int b, int m)
 {
 	int ans=1;
