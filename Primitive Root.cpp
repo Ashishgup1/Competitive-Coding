@@ -1,3 +1,6 @@
+// g is O(log^6 n).
+// Run Time of algorithm is O(ans * log phi(n) * log n), which is approximately O(log^8 n).
+
 int pow(int a, int b, int m)
 {
 	int ans=1;
