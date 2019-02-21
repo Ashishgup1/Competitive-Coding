@@ -52,3 +52,6 @@ int discreteLog(int a, int b, int m)
 
 //Problem 1: https://codeforces.com/gym/101853/problem/G
 //Solution 1: https://codeforces.com/gym/101853/submission/50273547
+
+//Problem 2: https://www.spoj.com/problems/MOD/
+//Solution 2: http://p.ip.fi/9xAa
