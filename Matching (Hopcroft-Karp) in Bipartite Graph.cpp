@@ -86,3 +86,5 @@ struct Hopcroft_Karp
 
 //Problem 2 (Ensuring that matching is consistent): https://www.spoj.com/problems/ADABLOOM/
 //Solution 2:http://p.ip.fi/igSb
+
+//Problem 3: https://codeforces.com/gym/101853/problem/B
