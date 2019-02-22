@@ -1,6 +1,3 @@
-//Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
-//Source: https://codeforces.com/profile/tfg
-
 struct Gauss 
 {
 	static const int bits = 20;
@@ -54,6 +51,8 @@ struct Gauss
 	}
 };
 
+//Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
+//Source: https://codeforces.com/profile/tfg
 
 //Sample Problem 1: http://codeforces.com/contest/959/problem/F
 //Sample Solution 1: https://codeforces.com/contest/959/submission/50314871
