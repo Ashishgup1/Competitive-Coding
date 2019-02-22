@@ -54,5 +54,9 @@ struct Gauss
 //Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
 //Source: https://codeforces.com/profile/tfg
 
-//Sample Problem 1: http://codeforces.com/contest/959/problem/F
-//Sample Solution 1: https://codeforces.com/contest/959/submission/50314871
+//Problem 1: http://codeforces.com/contest/959/problem/F
+//Solution 1: https://codeforces.com/contest/959/submission/50314871
+
+//Problem 2: https://codeforces.com/contest/1101/problem/G
+//Solution 2: https://codeforces.com/contest/1101/submission/50315103
+
