@@ -49,6 +49,12 @@ struct Gauss
 			x = max(x, x ^ table[i]);
 		return x;
 	}
+
+	void merge(Gauss &other)
+	{
+		for(int i = bits-1; i >= 0; i--)
+			add(other.table[i]);
+	}
 };
 
 //Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
