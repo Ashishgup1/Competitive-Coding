@@ -54,7 +54,7 @@ void mo()
 
 
 //Problem 1: https://codeforces.com/contest/86/problem/D
-//Solution 1: https://codeforces.com/contest/86/submission/50501513
+//Solution 1: https://codeforces.com/contest/86/submission/50507192
 
 //Problem 2 (Prefix Xor): https://codeforces.com/contest/617/problem/E
 //Solution 2: https://codeforces.com/contest/617/submission/45491963
