@@ -10,7 +10,7 @@ struct data
 
 int n, q, a[N];
 int freq[M];
-long long ans[N];
+long long ans[Q];
 long long cur = 0;
 
 bool comp(struct data &d1, struct data &d2)
@@ -58,3 +58,6 @@ void mo()
 
 //Problem 2 (Prefix Xor): https://codeforces.com/contest/617/problem/E
 //Solution 2: https://codeforces.com/contest/617/submission/45491963
+
+//Problem 3 (Inversions in a Range): https://www.codechef.com/CCOQ2019/problems/DRAGONS/
+//Solution 3: https://www.codechef.com/viewsolution/23234139
