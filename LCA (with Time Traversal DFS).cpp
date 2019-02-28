@@ -16,6 +16,16 @@ void dfs(int k, int par, int lvl)
 	tout[k]=tim;
 }
 
+int walk(int u, int h)
+{
+	for(int i=LG-1;i>=0;i--)
+	{
+		if((h>>i) & 1)
+			u = parent[i][u];
+	}
+	return u;
+}
+
 void precompute()
 {
 	for(int i=1;i<LG;i++)
@@ -47,6 +57,11 @@ int LCA(int u, int v)
 		}
 	}
 	return parent[0][u];
+}
+
+int dist(int u, int v)
+{
+	return level[u] + level[v] - 2 * level[LCA(u, v)];
 }
 
 //Problem 1 (Dynamic Diameter): https://codeforces.com/problemset/problem/379/F
