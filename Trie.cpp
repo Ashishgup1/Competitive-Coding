@@ -48,14 +48,17 @@ int maxxor(int x)
 	return ans;
 }
 
-//Sample Problem 1: http://codeforces.com/contest/706/problem/D
-//Sample Solution 1: http://codeforces.com/contest/706/submission/39515647 (Maxxor)
+//Problem 1: http://codeforces.com/contest/706/problem/D
+//Solution 1: http://codeforces.com/contest/706/submission/39515647 (Maxxor)
 
-//Sample Problem 2: http://codeforces.com/problemset/problem/948/D
-//Sample Solution 2: http://codeforces.com/contest/948/submission/39663985 (Minxor)
+//Problem 2: http://codeforces.com/problemset/problem/948/D
+//Solution 2: http://codeforces.com/contest/948/submission/39663985 (Minxor)
 
-//Sample Problem 3: http://codeforces.com/contest/665/problem/E
-//Sample Solution 3: http://codeforces.com/contest/665/submission/39664021 (Subarray Count)
+//Problem 3: http://codeforces.com/contest/665/problem/E
+//Solution 3: http://codeforces.com/contest/665/submission/39664021 (Subarray Count with Xor >= K)
 
-//Sample Problem 4: http://codeforces.com/contest/282/problem/E
-//Sample Solution 4: http://codeforces.com/contest/282/submission/39664030 (Maxxor)
+//Problem 4: http://codeforces.com/contest/282/problem/E
+//Solution 4: http://codeforces.com/contest/282/submission/39664030 (Maxxor)
+
+//Problem 5: https://codeforces.com/contest/842/problem/D
+//Solution 5: https://codeforces.com/contest/842/submission/50659739 (Recursive Insert + Mex)
