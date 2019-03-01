@@ -62,3 +62,6 @@ int maxxor(int x)
 
 //Problem 5: https://codeforces.com/contest/842/problem/D
 //Solution 5: https://codeforces.com/contest/842/submission/50659739 (Recursive Insert + Mex)
+
+//Problem 6: https://www.codechef.com/problems/GPD
+//Solution 6: http://p.ip.fi/rz9f (Persistent Trie + Recursive Insert, MinXor, MaxXor)
