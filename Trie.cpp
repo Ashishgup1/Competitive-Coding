@@ -13,9 +13,7 @@ void insert(int x)
 	{
 		int curbit=(x>>i)&1;
 		if(node->bit[curbit]==NULL)
-		{
 			node->bit[curbit]=new trie();
-		}  
 		node=node->bit[curbit];
 		node->cnt++;
 	}
