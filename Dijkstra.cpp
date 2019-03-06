@@ -93,3 +93,5 @@ void dijkstra(int source, int destination, int arrival[], int departure[])
 
 //Problem 4 (all source Dijkstra): https://codeforces.com/contest/96/problem/D
 //Solution 4: https://codeforces.com/contest/96/submission/45959572
+
+//Problem 5: https://p.ip.fi/woUJ (Lexicographically shortest path from U to V)
