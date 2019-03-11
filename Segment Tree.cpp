@@ -27,7 +27,8 @@ struct SegTree
 	{
 		cur.mn = min(l.mn, r.mn);
 	}
-
+	
+	//Handle lazy propagation appriopriately
 	void propagate(int node, int L, int R)
 	{
 		if(L != R)
