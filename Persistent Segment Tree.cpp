@@ -59,3 +59,6 @@ void persistentSegTree()
 
 //Problem 3 (Take atmost K values of a particular value in a range): https://codeforces.com/contest/813/problem/E
 //Solution 3: https://codeforces.com/contest/813/submission/50422337
+
+//Problem 4: https://www.codechef.com/ICMT2019/problems/ICM05
+//Solution 4: http://p.ip.fi/bo0f
