@@ -86,3 +86,9 @@ matrix power(matrix a, int b)
 
 //Sample Problem 2: http://codeforces.com/contest/821/problem/E
 //Sample Solution 2: http://codeforces.com/contest/821/submission/39865878
+
+//Sample Problem 3 (Only Matrix Expo): https://codeforces.com/contest/551/problem/D
+//Sample Solution 3: https://codeforces.com/contest/551/submission/48459284
+
+//Sample Problem 4: https://www.codechef.com/ENFE2019/problems/CHWLD
+//Sample Solution 4: https://www.codechef.com/viewsolution/23218422

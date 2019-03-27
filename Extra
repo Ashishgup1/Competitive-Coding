@@ -1,0 +1,67 @@
+-AdHoc
+//Problem 1 (Pending): https://www.codechef.com/ICMT2019/problems/ICM08
+//Problem 2: https://www.codechef.com/DCC2019/problems/DCC4
+
+-Dealing with periodic repeats:
+
+//Problem 1: https://codeforces.com/problemset/problem/173/A
+//Problem 2: https://codeforces.com/contest/863/problem/C
+
+-DP Problems:
+
+//Problem 1: https://codeforces.com/contest/214/problem/D
+//Problem 2: https://codeforces.com/problemset/problem/137/D
+//Problem 3: https://codeforces.com/contest/229/problem/D
+//Problem 4 (Mutually Dependent Recurrence): https://www.hackerrank.com/challenges/alien-languages/problem
+
+-DP on Tree:
+//Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
+//Problem 2 (Number of subtrees with diameter <=K): https://www.spoj.com/problems/CNTTREE/
+//Problem 3: https://codeforces.com/problemset/problem/815/C
+//Problem 4 (Smaller to Larger merging): https://csacademy.com/contest/round-31/task/uniform-trees/
+
+-DFS in 2D Grid:
+
+//Problem 1: https://codeforces.com/contest/616/problem/C
+
+(Probability):
+//Problem 1: https://codeforces.com/contest/513/problem/G2
+//Problem 2: https://www.codechef.com/GWR17ROL/problems/KALADIN/
+//Problem 3: https://codeforces.com/contest/280/problem/C
+
+-GCD Inclusion Exclusion:
+
+//Problem 1: https://codeforces.com/contest/548/problem/E
+//Problem 2: https://codeforces.com/contest/839/problem/D
+//Problem 3: https://www.codechef.com/ONIG2019/problems/BIT_CSUM/
+//Solution 3: https://www.codechef.com/viewsolution/23676665
+
+-Graph Theory:
+
+//Problem 1 (Diameter logic): https://codeforces.com/contest/337/problem/D
+//Problem 2 (Updating diameter): https://codeforces.com/problemset/problem/379/F
+//Problem 3: https://codeforces.com/contest/1040/problem/E
+//Problem 4: (DSU with Undo + Divide and Conquer): https://codeforces.com/contest/813/problem/F
+
+-Math;
+
+//Problem 1 (Pending): https://www.codechef.com/ICMT2019/problems/ICM06
+
+-Smart Greedy:
+
+//Problem 1: https://codeforces.com/contest/447/problem/D
+//Problem 2 (Own Comparator): https://codeforces.com/contest/922/standings/friends/true
+
+-Random Good Questions:
+
+//Problem 1 (Math): https://codeforces.com/contest/396/problem/B
+//Problem 2 (Binary Search with Consecutive Prefix Sums): https://codeforces.com/contest/837/problem/F
+//Problem 3 (DP with Consecutive Prefix Sums): https://codeforces.com/contest/57/problem/C
+//Problem 4 (Updating indices of a particular set): https://codeforces.com/contest/348/problem/C
+//Problem 5 (Perfect Powers in a range): https://codeforces.com/problemset/problem/955/C
+//Problem 6 (D length Jumps in Intervals): https://atcoder.jp/contests/arc068/tasks/arc068_c
+//Problem 7 (Converging K points to Median - Cost): https://www.codechef.com/viewsolution/23192706
+//problem 8 (DFS with missing edges): https://codeforces.com/contest/653/problem/E
+
+Resources:
+https://www.careerbless.com/aptitude/qa/permutations_combinations_imp7.php

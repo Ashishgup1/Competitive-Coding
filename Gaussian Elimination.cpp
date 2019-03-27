@@ -1,64 +1,68 @@
-//Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
-
-struct Gaussian
+struct Gauss 
 {
-	int no_of_bits = 20;
-	vector<int> v;
-	int set, origsize=0, redsize=0;
+	static const int bits = 20;
 
-	void push(int val)
+	int table[bits];
+
+	Gauss() 
 	{
-		origsize++;
-		if(val)
-			v.push_back(val);
+		for(int i = 0; i < bits; i++) 
+			table[i] = 0;
 	}
 
-	void clear()
+	int size() 
 	{
-		v.clear(); 
-		set=0, redsize=0;
-	}
-
-	void eliminate()
-	{
-		set = redsize = 0;
-		for(int bit=0;bit<=no_of_bits;bit++)
+		int ans = 0;
+		for(int i = 0; i < bits; i++) 
 		{
-			bool check=false;
-			for(int i=redsize;i<v.size();i++)
-			{
-				if((v[i]>>bit)&1)
-				{
-					swap(v[i], v[redsize]);
-					check=true;
-					break;
-				}
-			}
-			if(check)
-			{
-				for(int i=redsize+1;i<v.size();i++)
-				{
-					if((v[i]>>bit)&1)
-						v[i]^=v[redsize];
-				}
-				redsize++;
-			}
+			if(table[i]) 
+				ans++;
 		}
-		v.resize(redsize);
-		for(auto it:v)
-			set|=it;
+		return ans;
 	}
 
-	Gaussian& operator =(Gaussian &orig)
+	bool can(int x) 
 	{
-		v = orig.v;
-		set = orig.set;
-		redsize = orig.redsize;
-		origsize = orig.origsize;
-		return *this; 
+		for(int i = bits-1; i >= 0; i--) 
+			x = min(x, x ^ table[i]);
+		return x == 0;
+	}
+
+	void add(int x) 
+	{
+		for(int i = bits-1; i >= 0 && x; i--) 
+		{
+			if(table[i] == 0) 
+			{
+				table[i] = x;
+				x = 0;
+			} 
+			else 
+				x = min(x, x ^ table[i]);
+		}
+	}
+
+	int getBest() 
+	{
+		int x = 0;
+		for(int i = bits-1; i >= 0; i--) 
+			x = max(x, x ^ table[i]);
+		return x;
+	}
+
+	void merge(Gauss &other)
+	{
+		for(int i = bits-1; i >= 0; i--)
+			add(other.table[i]);
 	}
 };
 
-//Sample Problem 1: http://codeforces.com/contest/959/problem/F
+//Logic: https://math.stackexchange.com/questions/48682/maximization-with-xor-operator
+//Source: https://codeforces.com/profile/tfg
 
-//Sample Solution 1: http://codeforces.com/contest/959/submission/39772298
+//Problem 1: http://codeforces.com/contest/959/problem/F
+//Solution 1: https://codeforces.com/contest/959/submission/50314871
+
+//Problem 2: https://codeforces.com/contest/1101/problem/G
+//Solution 2: https://codeforces.com/contest/1101/submission/50315103
+

@@ -82,3 +82,6 @@ int kruskalMST()
 	}
 	return cost;
 }
+
+//Problem 1 (Kruskal + Flow): https://codeforces.com/gym/101667 : Problem E
+//Solution 1: http://p.ip.fi/HHLC

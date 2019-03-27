@@ -40,49 +40,60 @@ void merge(int u, int v)
 	sz[rt1]=0;
 	root[rt1]=root[rt2];
 }
+
+---
  
 Struct Implementation:
 
-typedef struct data
+struct DSU
 {
 	int connected;
-	int root[N], sz[N];
+	int par[N], sz[N];
 
-	void init()
+	DSU() {} 
+
+	DSU(int n) 
 	{
 		for(int i=1;i<=n;i++)
 		{
-			root[i]=i;
+			par[i]=i;
 			sz[i]=1;
 		}
 		connected=n;
 	}
 
-	int rt(int k)
+	int getPar(int k)
 	{
-		while(k!=root[k])
+		while(k!=par[k])
 		{
-			root[k]=root[root[k]];
-			k=root[k];
+			par[k]=par[par[k]];
+			k=par[k];
 		}
 		return k;
 	}
 
-	void merge(int u, int v)
+	int getSize(int k)
 	{
-		int rt1=rt(u);
-		int rt2=rt(v);
+		return sz[getPar(k)];
+	}
 
-		if(rt1==rt2)
+	void unite(int u, int v)
+	{
+		int par1=getPar(u), par2=getPar(v);
+
+		if(par1==par2)
 			return;
 
 		connected--;
 
-		if(sz[rt1]>sz[rt2])
-			swap(rt1, rt2);
+		if(sz[par1]>sz[par2])
+			swap(par1, par2);
 
-		sz[rt2]+=sz[rt1];
-		sz[rt1]=0;
-		root[rt1]=root[rt2];
+		sz[par2]+=sz[par1];
+		sz[par1]=0;
+		par[par1]=par[par2];
 	}
-}DSU;
+};
+
+//Problem 1 (DSU + Divide and Conquer): https://codeforces.com/contest/813/problem/F
+//Solution 1: https://codeforces.com/contest/813/submission/48548930

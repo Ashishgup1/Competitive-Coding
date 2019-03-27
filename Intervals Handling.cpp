@@ -40,5 +40,8 @@ void remove(int L, int R)
 	ans-=removed;
 }
 
-//Sample Problem 1: https://codeforces.com/contest/915/problem/E
-//Sample Solution 1: https://codeforces.com/contest/915/submission/40028187
+//Problem 1: https://codeforces.com/contest/915/problem/E
+//Solution 1: https://codeforces.com/contest/915/submission/40028187
+
+//Problem 2 (with sets): https://codeforces.com/contest/899/problem/E
+//Solution 2: https://codeforces.com/contest/899/submission/45963607

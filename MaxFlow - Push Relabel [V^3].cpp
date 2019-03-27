@@ -130,3 +130,6 @@ struct PushRelabel
 
 //Problem 4: (Mincut = Maxflow) http://codeforces.com/gym/100733/problem/I
 //Solution 4: http://codeforces.com/gym/100733/submission/41993711
+
+//Problem 5: (Mincut on N plans): https://wcipeg.com/problem/noi06p4
+//Solution 5: http://p.ip.fi/KQt0

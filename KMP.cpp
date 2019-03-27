@@ -70,3 +70,6 @@ vector<int> find_occurences(vector<int> &text, vector<int> &pattern)
 //Solution 1: https://codeforces.com/contest/1016/submission/41167402
 
 //Problem 2 and Solution (Cyclic Matching - Vectors): http://codeforces.com/gym/100502/submission/41562571
+
+//Problem 3 (Ranking Pattern): https://qr.ae/TUG5h9 
+//Solution 3: http://p.ip.fi/Hwpy

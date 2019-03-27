@@ -80,3 +80,11 @@ struct Hopcroft_Karp
 		return matching;
 	}
 };
+
+//Problem 1: https://codeforces.com/contest/387/problem/D
+//Solution 1: https://codeforces.com/contest/387/submission/48378847
+
+//Problem 2 (Ensuring that matching is consistent): https://www.spoj.com/problems/ADABLOOM/
+//Solution 2:http://p.ip.fi/igSb
+
+//Problem 3: https://codeforces.com/gym/101853/problem/B
