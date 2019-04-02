@@ -36,3 +36,6 @@ void bfs(int k)
 
 //Problem 1: https://codeforces.com/contest/208/problem/C
 //Solution 1: https://codeforces.com/contest/208/submission/38315030
+
+//Problem 2 (Multiple of number not containing some digits): https://www.spoj.com/problems/MULTII/
+//Solution 2: http://p.ip.fi/li3d
