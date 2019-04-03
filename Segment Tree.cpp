@@ -99,7 +99,7 @@ struct SegTree
 		}
 		int M = (L + R)/2;
 		Update(node*2, L, M, i, j, val);
-		Update(node*2, M + 1, R, i, j, val);
+		Update(node*2 + 1, M + 1, R, i, j, val);
 		merge(st[node], st[node*2], st[node*2 + 1]);
 	}
 
