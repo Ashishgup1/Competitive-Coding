@@ -58,3 +58,6 @@ int rsum(int i, int l, int r)
 
 //Problem 1: https://codeforces.com/contest/1073/problem/D
 //Solution 1: https://codeforces.com/contest/1073/submission/44863255
+
+//Problem 2: https://www.hackerrank.com/contests/university-codesprint-4/challenges/unique-art/problem
+//Solution 2: http://p.ip.fi/T9YM
