@@ -2,6 +2,10 @@
 //Problem 1 (Pending): https://www.codechef.com/ICMT2019/problems/ICM08
 //Problem 2: https://www.codechef.com/DCC2019/problems/DCC4
 
+-BIT:
+//Problem 1 (Count of distinct elements): https://www.hackerrank.com/contests/university-codesprint-4/challenges/unique-art/problem
+//Solution 1: http://p.ip.fi/T9YM
+
 -BFS
 //Problem 1 (Multiple of number not containing some digits): https://www.spoj.com/problems/MULTII/
 
