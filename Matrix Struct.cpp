@@ -18,6 +18,10 @@ int mult(int a, int b)
 struct matrix
 {
 	int arr[SZ][SZ];
+	matrix()
+	{
+		reset();
+	}
 
 	void reset()
 	{
@@ -33,7 +37,7 @@ struct matrix
 		}
 	}
 
-	matrix operator + (const matrix &o) const 
+	matrix operator + (const matrix &o) const
 	{
 		matrix res;
 		for(int i=0;i<SZ;i++)
@@ -46,7 +50,7 @@ struct matrix
 		return res;
 	}
 
-	matrix operator * (const matrix &o) const 
+	matrix operator * (const matrix &o) const
 	{
 		matrix res;
 		for(int i=0;i<SZ;i++)
