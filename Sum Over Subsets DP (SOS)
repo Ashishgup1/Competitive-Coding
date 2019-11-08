@@ -36,4 +36,7 @@ int32_t main()
 }
 
 //Question 1: https://codeforces.com/contest/383/problem/E
-//Solution 1 (Inclusion Exclusion): 
+//Solution 1 (Inclusion Exclusion): https://codeforces.com/contest/383/submission/64540469
+
+//Question 2: https://www.hackerrank.com/contests/w16/challenges/vim-war/problem
+//Solution 2 (Number of subsets with bitwise OR = X): https://www.hackerrank.com/contests/w16/challenges/vim-war/submissions/code/1317547443
