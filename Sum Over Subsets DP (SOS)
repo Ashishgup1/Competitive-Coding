@@ -40,3 +40,6 @@ int32_t main()
 
 //Question 2: https://www.hackerrank.com/contests/w16/challenges/vim-war/problem
 //Solution 2 (Number of subsets with bitwise OR = X): https://www.hackerrank.com/contests/w16/challenges/vim-war/submissions/code/1317547443
+
+//Question 3: https://codeforces.com/contest/449/problem/D
+//Solution 3 (Conversion of AND to OR - Demorgan's Law): https://codeforces.com/contest/449/submission/64594753
