@@ -43,3 +43,6 @@ int32_t main()
 
 //Question 3: https://codeforces.com/contest/449/problem/D
 //Solution 3 (Conversion of AND to OR - Demorgan's Law): https://codeforces.com/contest/449/submission/64594753
+
+//Question 4: https://codeforces.com/problemset/problem/1105/E
+//Solution 4: https://codeforces.com/contest/1105/submission/68110558
