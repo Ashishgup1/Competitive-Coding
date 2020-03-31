@@ -43,5 +43,5 @@ void decompose(int k, int par)
 //Solution 1: https://codeforces.com/contest/322/submission/45791742
 
 //Problem 2: https://codeforces.com/contest/342/problem/E
-//Solution 2: https://codeforces.com/contest/342/problem/E
+//Solution 2: https://codeforces.com/contest/342/submission/39515336
 
