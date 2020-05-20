@@ -105,3 +105,5 @@ vector<point> convex_hull(vector<point> &v)
 //Solution 1: http://codeforces.com/contest/1017/submission/41401690
 
 //Problem 2 and Solution: http://codeforces.com/gym/101606/submission/41541222
+
+//Problem 3: https://codeforces.com/contest/1300/problem/E
