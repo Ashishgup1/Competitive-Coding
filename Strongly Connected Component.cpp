@@ -60,3 +60,6 @@ void scc()
 
 //Sample Problem 3: https://codeforces.com/contest/118/problem/E
 //Sample Solution 3: https://codeforces.com/contest/118/submission/39888563
+
+//Problem 4 (Weakly connected component): https://codeforces.com/problemset/problem/505/D
+
