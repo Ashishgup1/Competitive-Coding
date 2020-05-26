@@ -29,7 +29,7 @@ int modular_inverse(int a, int m)
 void shift_solution(int &x, int &y, int a, int b, int cnt)
 {
 	x += cnt * b;
-	y -= cnt * b;
+	y -= cnt * a;
 }
  
 bool find_any_solution(int a, int b, int c, int &x0, int &y0, int &g)
