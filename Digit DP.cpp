@@ -36,5 +36,9 @@ int f(int k)
 	return ans;
 }
 
+//Example of using with both L and R: https://github.com/nachiketkanore/CP-Snippets/blob/master/Digit_DP_%5BL%2CR%5D_some_property.cpp
+
 //Problem 1: https://codeforces.com/contest/1036/problem/C
+
+//Problem 2: https://codeforces.com/contest/628/problem/D
 
