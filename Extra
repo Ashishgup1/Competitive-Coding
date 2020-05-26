@@ -25,6 +25,7 @@
 //Problem 4 (Mutually Dependent Recurrence): https://www.hackerrank.com/challenges/alien-languages/problem
 //Problem 5: https://codeforces.com/contest/489/problem/F
 //Problem 6: http://acm.timus.ru/problem.aspx?num=1526&space=1
+//Problem 7 (Pair DP): https://codeforces.com/problemset/problem/730/J
 
 -DP on Tree:
 //Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
