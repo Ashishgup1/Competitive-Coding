@@ -1,38 +1,39 @@
+int nodes = 0;
 int subtree[N], parentcentroid[N];
 set<int> g[N];
 
-void dfs(int k, int par)
+void dfs(int u, int par)
 {
 	nodes++;
-	subtree[k]=1;
-	for(auto it:g[k])
+	subtree[u] = 1;
+	for(auto &it:g[u])
 	{
-		if(it==par)
+		if(it == par)
 			continue;
-		dfs(it, k);
-		subtree[k]+=subtree[it];
+		dfs(it, u);
+		subtree[u] += subtree[it];
 	}
 }
 
-int centroid(int k, int par)
+int centroid(int u, int par)
 {
-	for(auto it:g[k])
+	for(auto &it:g[u])
 	{
-		if(it==par)
+		if(it == par)
 			continue;
-		if(subtree[it]>(nodes>>1))
-			return centroid(it, k);
+		if(subtree[u] > (nodes >> 1))
+			return centroid(u, it);
 	}
-	return k;
+	return u;
 }
 
-void decompose(int k, int par)
+void decompose(int u, int par)
 {
-	nodes=0;
-	dfs(k, k);
-	int node=centroid(k, k);
-	parentcentroid[node]=par;
-	for(auto it:g[node])
+	nodes = 0;
+	dfs(u, u);
+	int node = centroid(u, u);
+	parentcentroid[node] = par;
+	for(auto &it:g[node])
 	{
 		g[it].erase(node);
 		decompose(it, node);
@@ -42,6 +43,7 @@ void decompose(int k, int par)
 //Problem 1: https://codeforces.com/contest/322/problem/E
 //Solution 1: https://codeforces.com/contest/322/submission/45791742
 
-//Problem 2: https://codeforces.com/contest/342/problem/E
-//Solution 2: https://codeforces.com/contest/342/problem/E
+//Problem 2 (Same as above, with colors being reverted): https://www.spoj.com/problems/QTREE5/
+
+//Problem 3: https://codeforces.com/contest/342/problem/E
 
