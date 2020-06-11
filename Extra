@@ -8,6 +8,7 @@
 
 -BFS
 //Problem 1 (Multiple of number not containing some digits): https://www.spoj.com/problems/MULTII/
+//Problem 2 (DP to BFS): https://codeforces.com/problemset/problem/369/D
 
 -Binary Search
 //Problem 1: https://codeforces.com/contest/1168/problem/A
