@@ -29,6 +29,7 @@
 //Problem 6: http://acm.timus.ru/problem.aspx?num=1526&space=1
 //Problem 7 (Pair DP): https://codeforces.com/problemset/problem/730/J
 //Problem 8 (Math DP): https://codeforces.com/problemset/problem/403/D
+//Problem 9 (Strings cost): https://codeforces.com/problemset/problem/543/C
 
 -DP on Tree:
 //Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
