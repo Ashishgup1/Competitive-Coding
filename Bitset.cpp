@@ -21,3 +21,4 @@ void functions()
 //Problem 1 (DP): https://www.spoj.com/problems/ADACOINS/
 
 //Problem 2 (Circular BIT with Bitset): https://www.codechef.com/CROS2020/problems/COCR107
+//Code: https://www.codechef.com/viewsolution/34639511
