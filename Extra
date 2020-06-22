@@ -30,7 +30,7 @@
 //Problem 7 (Pair DP): https://codeforces.com/problemset/problem/730/J
 //Problem 8 (Math DP): https://codeforces.com/problemset/problem/403/D
 //Problem 9 (Strings cost): https://codeforces.com/problemset/problem/543/C
-
+//Problem 10 (Passing through K1 points in Grid and Avoiding K2 points): https://www.codechef.com/CROS2020/problems/COCR102 (Editorial: https://discuss.codechef.com/t/editorial-time-travel/69326)
 -DP on Tree:
 //Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
 //Problem 2 (Number of subtrees with diameter <=K): https://www.spoj.com/problems/CNTTREE/
