@@ -1,15 +1,19 @@
 struct Gauss 
 {
-	static const int bits = 20;
-
-	int table[bits];
-
-	Gauss() 
+	int bits = 60;
+	vector<int> table;
+	
+	Gauss()
 	{
-		for(int i = 0; i < bits; i++) 
-			table[i] = 0;
+		table = vector<int> (bits, 0);
 	}
 
+	Gauss(int _bits) 
+	{
+		bits = _bits;
+		table = vector<int> (bits, 0);
+	}
+ 
 	int size() 
 	{
 		int ans = 0;
@@ -20,14 +24,14 @@ struct Gauss
 		}
 		return ans;
 	}
-
+ 
 	bool can(int x) 
 	{
 		for(int i = bits - 1; i >= 0; i--) 
 			x = min(x, x ^ table[i]);
 		return x == 0;
 	}
-
+ 
 	void add(int x) 
 	{
 		for(int i = bits - 1; i >= 0 && x; i--) 
@@ -41,7 +45,7 @@ struct Gauss
 				x = min(x, x ^ table[i]);
 		}
 	}
-
+ 
 	int getBest() 
 	{
 		int x = 0;
@@ -49,7 +53,7 @@ struct Gauss
 			x = max(x, x ^ table[i]);
 		return x;
 	}
-
+ 
 	void merge(Gauss &other)
 	{
 		for(int i = bits - 1; i >= 0; i--)
