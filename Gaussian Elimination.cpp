@@ -66,3 +66,8 @@ struct Gauss
 //Problem 2: https://codeforces.com/contest/1101/problem/G
 //Solution 2: https://codeforces.com/contest/1101/submission/50315103
 
+//Problem 3: https://atcoder.jp/contests/abc141/tasks/abc141_f
+//Solution 3: https://atcoder.jp/contests/abc141/submissions/15096631
+
+//Problem 4: https://codeforces.com/contest/1336/problem/E1 (MITM)
+//Solution 4: https://codeforces.com/contest/1336/submission/76891926
