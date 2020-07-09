@@ -23,14 +23,14 @@ struct Gauss
 
 	bool can(int x) 
 	{
-		for(int i = bits-1; i >= 0; i--) 
+		for(int i = bits - 1; i >= 0; i--) 
 			x = min(x, x ^ table[i]);
 		return x == 0;
 	}
 
 	void add(int x) 
 	{
-		for(int i = bits-1; i >= 0 && x; i--) 
+		for(int i = bits - 1; i >= 0 && x; i--) 
 		{
 			if(table[i] == 0) 
 			{
@@ -45,14 +45,14 @@ struct Gauss
 	int getBest() 
 	{
 		int x = 0;
-		for(int i = bits-1; i >= 0; i--) 
+		for(int i = bits - 1; i >= 0; i--) 
 			x = max(x, x ^ table[i]);
 		return x;
 	}
 
 	void merge(Gauss &other)
 	{
-		for(int i = bits-1; i >= 0; i--)
+		for(int i = bits - 1; i >= 0; i--)
 			add(other.table[i]);
 	}
 };
