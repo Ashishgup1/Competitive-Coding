@@ -59,3 +59,6 @@ struct DirectedEulerPath
 
 //Problem 1: https://csacademy.com/contest/round-48/task/matching-substrings/
 //Solution 1: http://p.ip.fi/WTb7
+
+//Problem 2: https://codeforces.com/contest/508/problem/D
+//Solution 2: https://codeforces.com/contest/508/submission/86976956
