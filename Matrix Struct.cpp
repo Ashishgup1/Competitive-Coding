@@ -40,7 +40,7 @@ struct matrix
 		{
 			for(int j=0;j<SZ;j++)
 			{
-				res.arr[i][j] = add(arr[i][j], o.arr[i][j]);
+				add(res.arr[i][j], add(arr[i][j], o.arr[i][j]));
 			}
 		}
 		return res;
