@@ -51,3 +51,4 @@ int32_t main()
 //Solution 5: https://p.ip.fi/UWaF
 
 //Question 6: http://codechef.com/problems/COVERING
+//Solution 6: (Iterating over submasks first, then bits) https://www.codechef.com/viewsolution/35740758 
