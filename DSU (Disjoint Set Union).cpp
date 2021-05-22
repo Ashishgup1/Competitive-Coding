@@ -1,97 +1,46 @@
-Without Struct:
-
-int connected;
-int root[N], sz[N];
-
-void init()
-{
-	for(int i=1;i<=n;i++)
-	{
-		root[i]=i;
-		sz[i]=1;
-	}
-	connected=n;
-}
-
-int rt(int k)
-{
-	while(k!=root[k])
-	{
-		root[k]=root[root[k]];
-		k=root[k];
-	}
-	return k;
-}
-
-void merge(int u, int v)
-{
-	int rt1=rt(u);
-	int rt2=rt(v);
-
-	if(rt1==rt2)
-		return;
-
-	connected--;
-
-	if(sz[rt1]>sz[rt2])
-		swap(rt1, rt2);
-
-	sz[rt2]+=sz[rt1];
-	sz[rt1]=0;
-	root[rt1]=root[rt2];
-}
-
----
- 
-Struct Implementation:
-
 struct DSU
 {
 	int connected;
-	int par[N], sz[N];
+	vector<int> par, sz;
 
-	DSU() {} 
-
-	DSU(int n) 
+	void init(int n) 
 	{
-		for(int i=1;i<=n;i++)
-		{
-			par[i]=i;
-			sz[i]=1;
-		}
-		connected=n;
+		par = sz = vector<int> (n + 1, 0);
+		for(int i = 1; i <= n; i++)
+			par[i] = i, sz[i] = 1;
+		connected = n;
 	}
 
-	int getPar(int k)
+	int getPar(int u)
 	{
-		while(k!=par[k])
+		while(u != par[u])
 		{
-			par[k]=par[par[k]];
-			k=par[k];
+			par[u] = par[par[u]];
+			u = par[u];
 		}
-		return k;
+		return u;
 	}
 
-	int getSize(int k)
+	int getSize(int u)
 	{
-		return sz[getPar(k)];
+		return sz[getPar(u)];
 	}
 
 	void unite(int u, int v)
 	{
-		int par1=getPar(u), par2=getPar(v);
+		int par1 = getPar(u), par2 = getPar(v);
 
-		if(par1==par2)
+		if(par1 == par2)
 			return;
 
 		connected--;
 
-		if(sz[par1]>sz[par2])
+		if(sz[par1] > sz[par2])
 			swap(par1, par2);
 
-		sz[par2]+=sz[par1];
-		sz[par1]=0;
-		par[par1]=par[par2];
+		sz[par2] += sz[par1];
+		sz[par1] = 0;
+		par[par1] = par[par2];
 	}
 };
 

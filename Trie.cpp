@@ -1,55 +1,68 @@
-typedef struct data
+typedef struct trie
 {
-	data* bit[2];
-	int cnt = 0;
-}trie;
-
-trie* head;
-
-void insert(int x)
-{
-	trie* cur = head;
-	for(int i=30;i>=0;i--)
+	typedef struct node
 	{
-		int b = (x>>i) & 1;
-		if(!cur->bit[b])
-			cur->bit[b] = new trie();
-		cur = cur->bit[b];
-		cur->cnt++;
-	}
-}
+		node* nxt[2];
+		int cnt = 0;
 
-void remove(int x)
-{
-	trie* cur = head;
-	for(int i=30;i>=0;i--)
-	{
-		int b = (x>>i) & 1;
-		cur = cur->bit[b];
-		cur->cnt--;
-	}
-}
-
-int maxxor(int x)
-{
-	trie* cur = head;
-	int ans = 0;
-	for(int i=30;i>=0;i--)
-	{
-		int b = (x>>i)&1;
-		if(cur->bit[!b] && cur->bit[!b]->cnt>0)
+		node()
 		{
-			ans += (1LL<<i);
-			cur = cur->bit[!b];
+			nxt[0] = nxt[1] = NULL;
+			cnt = 0;
 		}
-		else
-			cur = cur->bit[b];
+
+	}Node;
+
+	Node* head;
+
+	trie() { head = new Node(); }
+
+	void insert(int x)
+	{
+		Node* cur = head;
+		for(int i = 30; i >= 0; i--)
+		{
+			int b = (x >> i) & 1;
+			if(!cur -> nxt[b])
+				cur -> nxt[b] = new Node();
+			cur = cur -> nxt[b];
+			cur -> cnt++;
+		}
 	}
-	return ans;
-}
+
+	void remove(int x)
+	{
+		Node* cur = head;
+		for(int i = 30; i >= 0; i--)
+		{
+			int b = (x >> i) & 1;
+			cur = cur -> nxt[b];
+			cur -> cnt--;
+		}
+	}
+
+	int maxxor(int x)
+	{
+		Node* cur = head;
+		int ans = 0;
+		for(int i = 30; i >= 0; i--)
+		{
+			int b = (x >> i) & 1;
+			if(cur -> nxt[!b] && cur -> nxt[!b] -> cnt > 0)
+			{
+				ans += (1LL << i);
+				cur = cur -> nxt[!b];
+			}
+			else
+				cur = cur -> nxt[b];
+		}
+		return ans;
+	}
+}Trie;
 
 //Problem 1: http://codeforces.com/contest/706/problem/D
 //Solution 1: http://codeforces.com/contest/706/submission/39515647 (Maxxor)
+//Solution 1: https://codeforces.com/contest/706/submission/85771777 (Full Struct)
 
 //Problem 2: http://codeforces.com/problemset/problem/948/D
 //Solution 2: http://codeforces.com/contest/948/submission/39663985 (Minxor)

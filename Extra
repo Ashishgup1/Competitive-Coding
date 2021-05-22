@@ -1,6 +1,7 @@
 -AdHoc
 //Problem 1 (Pending): https://www.codechef.com/ICMT2019/problems/ICM08
 //Problem 2: https://www.codechef.com/DCC2019/problems/DCC4
+//Problem 3: https://codeforces.com/problemset/problem/884/D
 
 -BIT:
 //Problem 1 (Count of distinct elements): https://www.hackerrank.com/contests/university-codesprint-4/challenges/unique-art/problem
@@ -8,6 +9,7 @@
 
 -BFS
 //Problem 1 (Multiple of number not containing some digits): https://www.spoj.com/problems/MULTII/
+//Problem 2 (DP to BFS): https://codeforces.com/problemset/problem/369/D
 
 -Binary Search
 //Problem 1: https://codeforces.com/contest/1168/problem/A
@@ -26,7 +28,9 @@
 //Problem 5: https://codeforces.com/contest/489/problem/F
 //Problem 6: http://acm.timus.ru/problem.aspx?num=1526&space=1
 //Problem 7 (Pair DP): https://codeforces.com/problemset/problem/730/J
-
+//Problem 8 (Math DP): https://codeforces.com/problemset/problem/403/D
+//Problem 9 (Strings cost): https://codeforces.com/problemset/problem/543/C
+//Problem 10 (Passing through K1 points in Grid and Avoiding K2 points): https://www.codechef.com/CROS2020/problems/COCR102 (Editorial: https://discuss.codechef.com/t/editorial-time-travel/69326)
 -DP on Tree:
 //Problem 1 (Minimum Vertex Cover + Number of Ways): https://www.spoj.com/problems/VOCV/ 
 //Problem 2 (Number of subtrees with diameter <=K): https://www.spoj.com/problems/CNTTREE/
@@ -34,6 +38,7 @@
 //Problem 4 (Smaller to Larger merging): https://csacademy.com/contest/round-31/task/uniform-trees/
 //Problem 5 (Vaults): https://codeforces.com/problemset/problem/855/C
 //Problem 6 (Game on Tree): https://codeforces.com/problemset/problem/538/E
+//Problem 7: https://codeforces.com/problemset/problem/1223/E
 
 -DFS
 //Problem 1 (Virtual Nodes):  https://codeforces.com/contest/821/problem/D
@@ -65,6 +70,7 @@
 //Problem 2 (Updating diameter): https://codeforces.com/problemset/problem/379/F
 //Problem 3: https://codeforces.com/contest/1040/problem/E
 //Problem 4: (DSU with Undo + Divide and Conquer): https://codeforces.com/contest/813/problem/F
+//Problem 5 (Points on Diameter etc): https://codeforces.com/problemset/problem/911/F
 
 -Hashing:
 
@@ -73,6 +79,8 @@
 -Math;
 
 //Problem 1 (Pending): https://www.codechef.com/ICMT2019/problems/ICM06
+//Problem 2 (Negative base): https://codeforces.com/contest/934/problem/D
+//Problem 3 (Principle of Inclusion Exclusion): https://codeforces.com/contest/1228/problem/E
 
 -Randomized:
 
@@ -95,6 +103,7 @@
 //Problem 8 (DFS with missing edges): https://codeforces.com/contest/653/problem/E
 //Problem 9 (Interactive - Tree Labelling): https://codeforces.com/contest/1075/problem/D
 //Problem 10 (100 length palindrome): https://codeforces.com/contest/335/problem/B
+//Problem 11 (Interactive): 
 
 -To Copy Paste in Future:
 //Problem 1 (Getting a sequence of + and - by using a sequence of - operationss): http://p.ip.fi/6t7b
@@ -105,6 +114,7 @@
 //Problem 6 (Matrix + Linearity of Exp): https://codeforces.com/problemset/problem/1042/E
 //Problem 7 (Rerooting): https://codeforces.com/contest/1187/problem/E
 //Problem 8 (Minimum Enclosing Sphere): https://codeforces.com/problemset/problem/106/E
+//Problem 9 (Optimal Scheduling): https://codeforces.com/contest/802/problem/B
 
 (https://www.hackerearth.com/practice/math/number-theory/basic-number-theory-2/practice-problems/algorithm/numbers-summation/)
 Resources:
